@@ -1,6 +1,3 @@
-import {hello} from './sub';
+import jQuery from 'jquery';
 
-const message = 'Hello World';
-
-// sub.jsに定義されたJavaScriptを実行する。
-hello(message);
+alert("これはjQueryのアラートです");
