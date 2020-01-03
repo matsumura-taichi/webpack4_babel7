@@ -3,9 +3,6 @@ module.exports = {
   // development に設定するとソースマップ有効でJSファイルが出力される
   mode: "development",
 
-  // メインとなるJavaScriptファイル（エントリーポイント）
-  entry: "./src/index.js",
-
   module: {
     rules: [
       {
@@ -19,7 +16,9 @@ module.exports = {
             options: {
               presets: [
                 // プリセットを指定することで、ES2019 を ES5 に変換
-                "@babel/preset-env"
+                "@babel/preset-env",
+                // React の JSX を解釈
+                "@babel/react"
               ]
             }
           }
